@@ -1,0 +1,324 @@
+body {
+  margin: 0;
+  text-align: center;
+  background-color: #E0DBD7;
+}
+
+h1 {
+  color: #7B4E48;
+  font-family: 'Yesteryear';
+  font-size: 5vw;
+  font-weight: lighter;
+}
+
+h2,
+h3 {
+  font-family: 'lato';
+}
+
+h2 {
+  color: #7B4E48;
+  font-size: 2vw;
+}
+
+h3 {
+  color: #A67D6B;
+  font-size: 1.5vw;
+}
+
+hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+.first-section {
+  padding-top: 13vw;
+  padding-bottom: 18vw;
+  background-color: #DECDAF;
+}
+
+.second-section {
+  margin-top: 100px;
+}
+
+.thirh-section,
+.nav-container {
+  background-color: #372727;
+}
+
+.nav-link {
+  color: #E0DBD7;
+}
+
+.nav-link:hover {
+  color: #DECDAF;
+}
+
+.thirh-section {
+  height: 200px;
+}
+
+.coffee-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coffee-mark {
+  width: 30vw;
+  position: absolute;
+  top: 10rem;
+}
+
+.profile-picture {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: -170px;
+  border-radius: 160px;
+  margin-bottom: 20px;
+}
+
+.intro,
+.skills-list,
+.contacts-message,
+.items-description {
+  font-family: 'karla';
+  font-size: 1.3vw;
+}
+
+.intro {
+  margin: auto;
+  width: 40%;
+  padding-top: 10px;
+}
+
+.skills-grid-container,
+.project-grid-container {
+  display: grid;
+  grid-template: 1fr/1fr 1fr 1fr;
+  margin-top: 30px;
+}
+
+.skills-list {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+}
+
+.skills-item {
+  justify-self: end;
+  padding-right: 10px;
+}
+
+.skills-rating {
+  justify-self: start;
+}
+
+.hobbies {
+  grid-template: none;
+}
+
+.project-grid-container {
+  margin-top: 40px;
+}
+
+.project-grid-items {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.project-item-image {
+  position: relative;
+  height: 300px;
+  width: 500px;
+  margin: auto;
+  margin-bottom: 18px;
+  transition: scale 0.6s;
+}
+
+.project-item-image:hover {
+  scale: 1.1;
+}
+
+.image {
+  height: 300px;
+  width: 500px;
+  object-fit: cover;
+}
+
+.under-construction {
+  filter: blur(10px);
+}
+
+.under-construction-sign{
+  position: absolute;
+  bottom: 0px;
+}
+.contacts {
+  margin: 100px auto;
+}
+
+.contacts-title {
+  margin-bottom: 10px;
+}
+
+.contacts-message {
+  padding-top: 20px;
+  margin-bottom: 25px;
+}
+
+.contacts-button {
+  text-decoration: none;
+  color: #E0DBD7;
+  font-family: 'lato';
+  font-size: 30px;
+  padding: 10px 30px;
+  background-color: #7B4E48;
+  border: none;
+  border-radius: 10px;
+  transition: background 0.9s;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.contacts-button:hover {
+  background-color: #A67D6B;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.links-container a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.links {
+  font-family: 'lato';
+  text-decoration: none;
+  color: #7B4E48;
+}
+
+.links:hover {
+  color: #E0DBD7;
+}
+
+.copyright {
+  font-family: 'lato';
+  color: #E0DBD7;
+}
+
+@media (max-width: 1600px) {
+  .project-grid-container {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    margin-top: 30px;
+  }
+
+  .first-section {
+    padding-top: 14vw;
+  }
+
+  .online-store {
+    grid-column: 1/-1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .project-grid-container {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    margin-top: 30px;
+  }
+  h1{
+    font-size: 60px;
+  }
+  h2{
+    font-size: 24px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  .intro,
+  .skills-list,
+  .items-description,
+  .contacts-message {
+    font-size: 16px;
+  }
+  .first-section{
+    padding: 168px 0 216px 0;
+  }
+  .coffee-mark{
+    width: 360px;
+    top: 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-grid-container {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    margin-top: 30px;
+    row-gap: 20px;
+  }
+
+  .others {
+    grid-column: 1/-1;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .skills-grid-container {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    margin-top: 30px;
+    row-gap: 20px;
+  }
+
+  .second-section {
+    margin-top: 50px;
+  }
+
+  
+
+  .project-item-image {
+    width: auto;
+    margin: 5px;
+  }
+
+  .image {
+    width: 80%;
+  }
+}
+
+@media (max-width: 425px) {
+  h1{
+    font-size: 60px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  .intro,
+  .skills-list,
+  .items-description,
+  .contacts-message {
+    font-size: 14px;
+  }
+  .first-section{
+    padding: 108px 0 156px 0;
+  }
+  .coffee-mark{
+    width: 300px;
+    top: 6rem;
+  }
+}
